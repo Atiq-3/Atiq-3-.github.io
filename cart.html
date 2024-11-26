@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0%;
+            box-sizing: 0px;
+        }
+        .main{
+            height: 100vh;
+            width: 100%;
+            background-color: white;
+        }
+        .top{
+            height: 100px;
+            width: 100%;
+            background-color:white;
+        
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .top b{
+            color: black;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 30px;
+            text-align: center;
+        }
+        .mid{
+            height: 200px;
+            width: 100%;
+            background-color:white;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+        }
+        .mid p{
+            font-size: 45px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            display: flex;
+
+        }
+        .button :hover{
+            background-color: rgb(146, 204, 243);
+            
+        }
+        .centre{
+            height: 300px;
+            /* width: 100%; */
+            display: grid;
+            grid-template-columns: 60%;
+            justify-content: center;
+            align-items: center;
+        }
+  
+        button{
+            height: 40px;
+            width: 100%;
+            background-color: white;
+            cursor: pointer;
+            border-radius: 50px;
+            font-size: 15px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            display:flex ;
+            justify-content: center;
+            align-items: center;
+        }
+         
+        @media (max-width: 700px) {
+            .top b {
+                height: auto;
+                font-size: 30px; /* Smaller font size for mobile */
+            }
+            .mid p {
+                height: auto;
+                font-size: 30px; /* Smaller font size for mobile */
+            }
+            .button a {
+                height: auto;
+                width: 150px; /* Make button container full width */
+                margin: 5px 0; /* Adjust margin for spacing */
+            }
+            button {
+                height: auto;
+                height:30px; /* Keep button height */
+                font-size: 20px; /* Smaller font size for buttons */
+            }
+        }
+
+
+
+        @media (max-width: 500px) {
+            .top b {
+                font-size: 20px; /* Smaller font size for mobile */
+            }
+            .mid p {
+                font-size: 20px; /* Smaller font size for mobile */
+            }
+            .button {
+                width: 100%; /* Make button container full width */
+                margin: 5px 0; /* Adjust margin for spacing */
+            }
+            button {
+                height: 40px; /* Keep button height */
+                font-size: 14px; /* Smaller font size for buttons */
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="top"><b>START YOUR ORDER</b></div><hr>
+        <div class="mid"> <p>HOW WOULD YOU LIKE TO RECEIVE YOUR ORDER?</p>
+            
+        </div><br>
+        <div class="centre">
+            <div class="button"><a href=""><button>Delivery</button></a></div><br>
+            <div class="button"><a href=""><button>Pick Up</button></a></div><br>
+            <div class="button"><a href=""><button>Dine</button></a></div><br>
+            
+        </div>
+       
+    </div>
+    
+</body>
+</html>

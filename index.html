@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="stylesheet" href="sign.html">
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        /* box-sizing: 0px; */
+    }
+
+    /* TOP EDITING CENTER */
+    .parent {
+        /* display: flex;
+        justify-content: space-between;
+        align-items: center;
+         */
+         position: sticky;
+         top: 0px;
+    }
+
+    .top {
+        height: 50px;
+        width: 100%;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .top p {
+        margin-top: 12px;
+        /* font-weight: 400; */
+        /* font-style: normal; */
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .top i {
+        margin-right: 15px;
+        font-size: 20px;
+
+    }
+
+    .top button {
+        border-radius: 15px;
+        height: 25px;
+        width: 99px;
+        color: white;
+        background-color: black;
+        margin-left: 15px;
+        font-weight: 400;
+        cursor: pointer;
+    }
+
+    .top button :hover {
+        color: rgb(234, 125, 238);
+    }
+
+    /* TOP EDITING FINISH HERE */
+
+    /* NAVBAR SECTION */
+
+    .navbar {
+        height: 100px;
+        width: 100%;
+        background-color: aqua;
+    }
+    .main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        width: 30%;
+    }
+    .menu{
+        /* margin: 40px; */
+        font-size: 18px;
+        text-decoration: none;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: black;
+    }
+    .second{
+        display: flex;
+        height: 100px;
+        width: 70%;
+        float: left;
+    }
+    .one{
+        height: 100px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: sticky;
+        top: 40px;
+    }
+    .half{
+        height: 100px;
+        width: 50%;
+        background-color:white;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .half2{
+        height: 100px;
+        width: 50%;
+        background-color:white;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .cart{
+        height: 70px;
+        width: 80px;
+    }
+    .sign{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .sign img{
+        margin-right: 10px;
+        text-align: center;
+        /* padding-top: 20px; */
+        /* font-size: 20px; */
+    }
+    .cart2{
+        height: 25px;
+        width: 25px;
+    }
+    .dine{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    /* MID SECTION */
+
+
+    .mid{
+        height: 70px;
+        width: 100%;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .text{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: white;
+    }
+    .text a button{
+        height: 40px;
+        width: 160px;
+        border-radius: 30px;
+        background-color: red;
+        color: white;
+        margin: 20px;
+        cursor: pointer;
+    }
+
+
+    /* MID PART 2 */
+
+    .photo{
+        height: 450px;
+        width: 100%;
+        background-color: #d53939;
+    }
+    .photo img{
+        height: 100%;
+        width: 100%;
+    }
+    .category{
+        font-size:30px ;
+        height: 10px;
+        color: black;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      margin-left: 70px;
+    }
+    /* offer deal */
+    .same{
+        height: 300px;
+        width: 300px;
+        background-color: rgb(243, 241, 241);
+        margin: 10px;
+        display: flex;
+
+    }
+    .leader{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .sam{
+        height: 300px;
+        width: 300px;
+        background-color: rgb(243, 241, 241);
+        margin: 10px;
+    }
+    .same img{
+        height: 250px;
+        width: 100%;
+    }
+    .lead{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /* .inside{
+        height: 200px;
+        width: 100%;
+        background-color: red;
+    } */
+    .le{
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 20px;
+    }
+    .last{
+        height: 200px;
+        width: 100%;
+        background-color: black;
+        display: flex;
+        
+        
+    }
+    .end{
+        height: 100%;
+        width: 12.5%;
+        background-color: black;
+        color: white;
+        
+    }
+    .lasts{
+        color: white;
+        margin: 10px;
+        font-size: 15px;
+        /* margin-top: 30px; */
+        cursor: pointer;
+    }
+    .end img{
+        /* margin: 30px; */
+        cursor: pointer;
+        height: 65%;
+        width: 65%;
+    }
+.end b {
+    margin: 10px;
+}
+.copy{
+    height: 30px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.copyright{
+    height: 100%;
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-size: 10px;
+    
+}
+.insta{
+    height: 20px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    /* justify-content: flex-end; */
+    /* align-items: center; */
+}
+.face{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /* max-width: 20px; */
+}
+.face img{
+    height: 100%;
+    width: 2%;
+    margin: 5px;
+}
+.end .kfc1{
+    height: 40%;
+    width: 40%;
+    /* align-items: center; */
+    margin-top: 10px;
+}
+
+@media (max-width: 950px) {
+  .parent {
+    height: auto;
+  }
+  .top{
+    height: auto;
+  }
+  .top p{
+    font-size: 15px;
+  }
+  .top button{
+    height: 24px;
+    width: 100px;
+  }
+  .top button b{
+    font-size: 12px;
+  }
+  .one{
+    height: auto;
+  }
+  .half{
+    height: auto;
+
+  }
+  .half img{
+    height: 40px;
+    width: 50px;
+  }
+  .menu{
+    font-size: 14px;
+  }
+  .half2{
+    height: 40px;
+
+  }
+  .menu{
+    font-size: 14px;
+}
+.cart{
+    height: auto;
+    width: 50px;
+}
+.cart2{
+    height: auto;
+    width: 20px;
+}
+.mid{
+    height: auto;
+}
+.text{
+    height: auto;
+    font-size: 15px;
+}
+.text a button{
+    height: 30px;
+    width:140px ;
+}
+.photo{
+    height: 250px;
+}
+.photo img{
+    height:100% ;
+    width: 100%;
+}
+/* cart section  */
+
+.category{
+    height: auto;
+    font-size: 25px;
+}
+.leader{
+    height: auto;
+}
+.same{
+    height: auto;
+}
+.same img{
+    height: 150px;
+    width: 100%;
+}
+.le{
+    height: auto;
+    font-size: 15px;
+}
+/* last about */
+.last{
+    height: auto;
+}
+.lasts{
+    font-size: 11px;
+    height: auto;
+}
+.end img{
+    height: auto;
+    width: 70%;
+}
+
+}
+
+
+/* media qurey 2 */
+
+@media (max-width: 610px) {
+  .parent {
+    height: auto;
+    /* position: absolute; */
+  }
+  .top{
+    height: auto;
+  }
+  .top p{
+    font-size: 12px;
+  }
+  .top button{
+    height: 25px;
+    width: 100px;
+  }
+  .top button b{
+    font-size: 10px;
+  }
+  .one{
+    height: auto;
+    top: 10px;
+  }
+  .half{
+    height: 40px;
+
+  }
+  .half img{
+    height: 30px;
+    width: 40px;
+  }
+  .menu{
+    font-size: 12px;
+  }
+  .half2{
+    height: 40px;
+
+  }
+  .menu{
+    font-size: 12px;
+}
+.cart{
+    height: auto;
+    width: 35px;
+}
+.cart2{
+    height: auto;
+    width: 15px;
+}
+.mid{
+    /* height: auto; */
+    display: none;
+}
+.text{
+    height: 70px;
+    font-size: 11px;
+}
+.text a button{
+    height: 30px;
+    width:120px ;
+}
+.text b{
+    font-size: 10px;
+}
+.photo{
+    height: 200px;
+}
+.photo img{
+    height:100% ;
+    width: 100%;
+}
+/* cart section  */
+
+.category{
+    height: auto;
+    font-size: 19px;
+}
+.leader{
+    height: auto;
+    flex-direction: column;
+}
+.same{
+    height: auto;
+    width: auto;
+}
+.same img{
+    height: 150px;
+    width: 100%;
+}
+.le{
+    height: auto;
+    font-size: 15px;
+}
+/* last about */
+.last{
+    height: auto;
+}
+.lasts{
+    font-size: 11px;
+    height: auto;
+}
+.end img{
+    height: auto;
+    width: 70%;
+}
+
+}
+
+
+
+/* last and final  */
+
+@media (max-width: 610px) {
+  .parent {
+    height: auto;
+    /* position: absolute; */
+  }
+  .top{
+    height: auto;
+  }
+  .top p{
+    font-size: 12px;
+  }
+  .top button{
+    height: 25px;
+    width: 100px;
+  }
+  .top button b{
+    font-size: 10px;
+  }
+  .one{
+    height: auto;
+    top: 10px;
+  }
+  .half{
+    height: 40px;
+
+  }
+  .half img{
+    height: 30px;
+    width: 40px;
+  }
+  .menu{
+    font-size: 12px;
+  }
+  .half2{
+    height: 40px;
+
+  }
+  .menu{
+    font-size: 12px;
+}
+.cart{
+    height: auto;
+    width: 35px;
+}
+.cart2{
+    height: auto;
+    width: 15px;
+}
+.mid{
+    /* height: auto; */
+    display: none;
+}
+.text{
+    height: 70px;
+    font-size: 11px;
+}
+.text a button{
+    height: 30px;
+    width:120px ;
+}
+.text b{
+    font-size: 10px;
+}
+.photo{
+    height: 200px;
+}
+.photo img{
+    height:100% ;
+    width: 100%;
+}
+/* cart section  */
+
+.category{
+    height: auto;
+    font-size: 19px;
+}
+.leader{
+    height: auto;
+    flex-direction: column;
+}
+.same{
+    height: auto;
+    width: auto;
+}
+.same img{
+    height: 150px;
+    width: 100%;
+}
+.le{
+    height: auto;
+    font-size: 15px;
+}
+/* last about */
+.last{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.lasts{
+    font-size: 11px;
+    height: auto;
+    text-align: center;
+}
+.end img{
+    height: auto;
+    width: 30%;
+}
+.end{
+    width: 100%;
+    height: auto;
+}
+.end .kfc1{
+    width: 20%;
+}
+}
+
+
+</style>
+
+<body>
+    <!-- top section -->
+    <div class="parent">
+        <div class="top">
+            <i class="fa-solid fa-location-dot fa-bounce" style="color: #d53939;"></i>
+            <p>Allow location access for local store menu and promos</p>
+            <a href="#"><button><b>Set Location</b></button></a>
+        </div>
+    </div>
+    <hr>
+
+    <!-- MENU SECTION  -->
+
+    <div class="one">
+        <div class="half">
+            <img src="img\kfcLogo.492728c6.svg" alt="">
+            <a class="menu" href="dealkfc.html" target="_blank"  >Deals</a>
+            <a class="menu" href="menu.html" target="_blank">Menu</a>
+            
+        </div>
+        <div class="half2">
+            <a class="menu" href="sign.html " target="_blank" ><div class="sign"><img class="cart2" src="//images.ctfassets.net/wtodlh47qxpt/6bJdGLRkksNvWP4LI9ZiFF/cb89d6393492fd093e0f99980abfa39e/Account_Icon.svg"alt="">Sign In</div></a>
+          <div class="dine">
+            <a class="menu" href="cart.html" target="_blank" >$0</a>
+            <a href="cart.html" target="_blank" ><img class="cart" src="//images.ctfassets.net/wtodlh47qxpt/6qtBVFuno7pdwOQ9RIvYm9/d13e9b7242980972cf49beddde2cc295/bucket_cart_icon.svg" alt=""></a>
+         </div>
+        </div>
+    </div>
+
+    <!-- MID SECTION -->
+
+    <div class="mid">
+        <div class="text">LET'S ORDER FOR DELIVERY, PICK UP, OR DINE-IN 
+            <a class="btn" href="cart.html"><button ><b> Start Order</b></button></a>
+        </div>
+    </div>
+
+    <!-- MID PART 2 -->
+
+
+    <div class="photo">
+        <a href=""><a href=""><img src="img\web_1440x396px.webp" alt=""></a>
+    </div>
+    <br>
+    <div class="category">BROWSE CATEGORIES </div><br>
+    <br>
+
+        <!-- deal offer one -->
+    <div class="leader">
+    <div class="same">
+        <div class="im"><a href=""><img src="img\CAT289.jpg" alt=""></a>
+            <div class="le"> <B class="cen">INTERNATION BURGER FEST</B> </div>
+        </div>
+    </div>
+    <div class="same">
+        <div class="im"><a href=""><img src="img\CAT228.jpg" alt=""><a href=""></a>
+            <div class="le"> <B class="cen">VALUE LUNCH SPECIALS</B> </div>
+        </div>
+    </div>
+    <div class="same">
+        <div class="im"><a href=""><img src="img\CAT287.jpg" alt=""></a>
+            <div class="le"> <B class="cen">MATCH DAY COMBOS</B> </div>
+        </div>
+    </div>
+    <div class="same">
+        <div class="im"><a href=""><img src="img\CAT158.jpg" alt=""></a>
+            <div class="le"> <B class="cen">BOX MEAL</B> </div>
+        </div>
+    </div>
+    </div>
+
+
+        <!-- deal offer -->
+
+
+    <div class="leader">
+        <div class="same">
+            <div class="im"><a href=""><img src="img\CAT99.jpg" alt=""></a>
+                <div class="le"> <B class="cen">BURGERS</B> </div>
+            </div>
+        </div>
+        <div class="same">
+            <div class="im"><a href=""><img src="img\CAT86.jpg" alt=""></a>
+                <div class="le"> <B class="cen">CHICKEN BUCKETS</B> </div>
+            </div>
+        </div>
+        <div class="same">
+            <div class="im"><a href=""><img src="img\CAT213.jpg" alt=""></a>
+                <div class="le"> <B class="cen">RICE BOWLZS</B> </div>
+            </div>
+        </div>
+        <div class="same">
+            <div class="im"><a href=""><img src="img\finger_lickin.fc21c805.svg" alt=""></a>
+                <div class="le"> <B class="cen">View all Menu <i class="fa-solid fa-arrow-right"></i></B> </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+<!-- slider -->
+ 
+
+    <!-- last part -->
+
+    <div class="last">
+        <div class="end"><img class="kfc1" src="img\KFC_Logo (1).svg" alt=""></div>
+        <div class="end">
+           <p class="lasts">KFC India</p> 
+          <p class="lasts"> About KFC</p> 
+           <p class="lasts"> KFC Care</p>
+           <p class="lasts">Careers</p> 
+           <p class="lasts"> Our Golden Past</p>
+            <p class="lasts">Responsible Disclosure</p></div>
+        <div class="end">
+            <p class="lasts">Legal</p>
+            <p class="lasts">Terms and Conditions</p>
+            <p class="lasts">Privacy Policy</p>
+            <p class="lasts">Disclaimer</p>
+            <p class="lasts">Caution Notice</p>
+        </div>
+        <div class="end">
+            <p class="lasts">KFC Food</p>
+            <p class="lasts"> Menu</p>
+            <p class="lasts">Order Lookup</p>
+            <p class="lasts">Gift Card</p>
+            <p class="lasts">Nutrition & Allergen</p>
+        </div>
+        <div class="end">
+            <p class="lasts">Support</p>
+            <p class="lasts">Get Help</p>
+            <p class="lasts">Contact Us</p>
+            <p class="lasts">KFC Feedback</p>
+            <p class="lasts">Privacy Policy</p>
+        </div>
+        <i class="fa-solid fa-location-dot fa-" style="color: #d53939;"></i>
+        <div class="end"> <b class="lasts">Find a KFC</b>
+        </div>
+        <div class="end"><img src="img\google_play.svg" alt=""></div>
+        <div class="end">
+            <img src="img\apple.svg" alt="">
+        </div>
+    </div>
+
+    <div class="copy">
+        <div class="copyright">
+            Copyright © KFC Corporation 2024 All rights reserved</div>
+
+    </div>
+        <div class="intsa">
+            <div class="face">
+                <img class="c" src="img\Social_Insta_White.svg" alt="">
+                <img class="c" src="img\Social_Facebook_White.svg" alt="">
+                <img class="c" src="img\Social_Twitter_White.svg" alt="">
+            </div>
+        </div>
+</body>
+
+</html>

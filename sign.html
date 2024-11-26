@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <a href="KFC.html"></a> -->
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: 0px;
+        }
+        .parent{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color:whites;
+        }
+        .sign{
+            height: 600px;
+            width: 700px;
+            background-color:white;
+        }
+        .top{
+            text-align: center;
+            margin-top: 20px;
+            
+        }
+        .logo{
+            text-align: center;
+            margin-top: 20px;
+        }
+        .text{
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 20px;
+        }
+        .number{
+            /* text-align: center; */
+            width: 99%;
+            border-top: 10px;
+            align-items: center;
+        }
+       
+        .half{
+            height: 280px;
+            width: 100%;
+            background-color: white;
+            /* display: flex; */
+            /* justify-content: center; */
+            /* align-items: center; */
+            text-align: center;
+        }
+        .btn{
+            height: 40px;
+            width: 200px;
+            border-radius: 30px;
+            color: white;
+            background-color: black;
+           cursor: pointer;
+        }
+        .button{
+            height: 40px;
+            width: 500px;
+            border-radius: 30px;
+            cursor: pointer;
+        }
+
+        @media (max-width: 510px) {
+    .sign {
+        width: 100%; 
+        height: auto; 
+        padding: 5px; 
+    }
+    
+    .top {
+        font-size: 18px; 
+    }
+
+    .text {
+        font-size: 14px;
+        line-height: 1.4; 
+    }
+    
+    .number {
+        width: 100%; 
+        padding: 5px;
+        font-size: 14px;
+    }
+    
+    .btn, .button {
+        width: 100%; 
+        height: 35px; 
+        margin: 5px 0;
+        font-size: 14px;
+    }
+    
+    .half {
+        height: auto; 
+    }
+    
+    .word {
+        font-size: 12px; 
+        margin: 5px 0; 
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="sign">
+            <div class="top"><b>Sign In / Sign Up</b></div><br>
+            <div class="logo"><img src="img\KFC_logo.svg" alt=""></div><br>
+            <div class="text">LET’s SIGN IN OR CREATE ACCOUNT WITH YOUR PHONE NUMBER!</div><br>
+            <input class="number" type="tel" placeholder ="Phone Nmuber"> <br><br><br><br>
+            <div class="word">By “logging in to KFC”, you agree to our Privacy Policy and Terms & Conditions.</div><br><br>
+            
+             <div class="half">
+               <a href=""><button class="btn">Send me a Code</button></a><br><br>
+               <hr><br><br>
+               <!-- <p>or</p> -->
+               <a href=""><button class="button">Skip, Continue a Guest</button></a>
+             </div>
+            
+        </div>
+    </div>
+</body>
+</html>
